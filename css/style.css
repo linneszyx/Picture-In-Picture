@@ -1,9 +1,51 @@
-
+/* It's importing the Montserrat font from Google Fonts. */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* It's a CSS rule that makes sure that the padding and border of an element are included in the total
+width and height of that element. */
 html {
   box-sizing: border-box;
 }
-
+/* It's setting the body to be 100% of the viewport height, and centering the content. */
 body {
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(37, 37, 37);
+}
+/* It's setting the border, padding, border-radius, and box-shadow of the button container. */
+.btn-ctn {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: inset 0 20 4px -19px rgba(255, 255, 255, 0.7);
+}
+/* It's setting the cursor to be a pointer when the mouse is over the button, removing the outline
+when the button is clicked, setting the width and height of the button, setting the font family,
+font
+size, color, and text shadow of the button, setting the background of the button to be a linear
+gradient, setting the border color, border radius, and box shadow of the button. */
+button {
+  cursor: pointer;
+  outline: none;
+  width: 120px;
+  height: 75px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 2px 5px black;
+  background: linear-gradient(to top,#696969,#575757);
+  border-color: 2px solid black;
+  border-radius: 7px;
+  box-shadow: inset 0 20 4px -19px rgba(255, 255, 255, 0.4),0 12px 12px 0 rgba(0, 0, 0, 0.3);
+}
+/* It's changing the background of the button when the mouse is over the button. */
+button:hover{
+  background: linear-gradient(to bottom,#696969,#575757);
+}
+/* It's changing the button when it's clicked. */
+button:active{
+  transform: translateY(3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3);
 }
